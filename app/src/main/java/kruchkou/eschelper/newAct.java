@@ -16,7 +16,7 @@ import static java.lang.Integer.parseInt;
 
 public class newAct extends AppCompatActivity {
 
-    final String LOG_TAG = "myLogs";
+    static final String LOG_TAG = "myLogs";
 
     Button btnSaveAct, btnCancel;
     DBHelper dbHelper;
@@ -87,10 +87,10 @@ public class newAct extends AppCompatActivity {
         // с переходом на list
     }
 
-    class DBHelper extends SQLiteOpenHelper {
+    static class DBHelper extends SQLiteOpenHelper {
         public DBHelper(Context context) {
             // конструктор суперкласса
-            super(context, "myDB", null, 1);
+            super(context, "ESC", null, 1);
         }
 
         @Override

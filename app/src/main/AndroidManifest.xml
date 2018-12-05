@@ -19,7 +19,7 @@
         <activity
             android:name=".newAct"
             android:noHistory="true" />
-        <activity android:name=".list"></activity>
+        <activity android:name=".list" />
     </application>
 
 </manifest>
